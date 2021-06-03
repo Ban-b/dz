@@ -1,0 +1,115 @@
+№1
+var a = 1, b = 1, c, d;
+c = ++a; alert(c);           // c = 2 (операция ++a означает a + 1) 
+d = b++; alert(d);           // d = 1 (операция b++ означает округление в меньшую сторону,но после оно увелчит  1)
+c = (2+ ++a); alert(c);      // с = 5 (после предыдущей операции [a] = 2;после операции [++a], [a] = 3; 2 + 3 =5;)
+d = (2+ b++); alert(d);      // d = 4 (после предыдущей операции [b] = 2,после операции [b++], [b] = 2; 2 + 2 =4; после [b] увеличится на 1)
+alert(a);                    // a = 3 (после двух операций [++a], что равно [a +1 +1], a = 3)
+alert(b);                    // b = 3 (после двух операций [b++], что описаны выше)
+
+№2
+x = 5;
+
+№3
+var a = prompt("Введите 1 число:");
+var b = prompt("Введите 2 число:");
+
+if (a > 0 && b > 0){
+    x = a - b;
+    alert(x);
+} else if (a < 0 && b < 0){
+    x = a * b;
+    alert(x);
+} else if (a < 0 && b > 0 || a > 0 && b < 0){
+    x = a + b;
+    alert(x);
+}
+
+№4
+var a = +prompt("Введите число от 1 до 15:");
+switch (a) {
+    case 1:
+        alert("Ваши числа - 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15");
+        break;
+    case 2:
+        alert("Ваши числа - 2,3,4,5,6,7,8,9,10,11,12,13,14,15");
+        break;
+    case 3:
+        alert("Ваши числа - 3,4,5,6,7,8,9,10,11,12,13,14,15");
+        break;
+    case 4:
+        alert("Ваши числа - 4,5,6,7,8,9,10,11,12,13,14,15");
+        break;    
+    case 5:
+        alert("Ваши числа - 5,6,7,8,9,10,11,12,13,14,15");
+        break;
+    case 6:
+        alert("Ваши числа - 6,7,8,9,10,11,12,13,14,15");
+        break;
+    case 7:
+        alert("Ваши числа - 7,8,9,10,11,12,13,14,15");
+        break;
+    case 8:
+        alert("Ваши числа - 8,9,10,11,12,13,14,15");
+        break;
+    case 9:
+        alert("Ваши числа - 9,10,11,12,13,14,15");
+        break;
+    case 10:
+        alert("Ваши числа - 10,11,12,13,14,15");
+        break;
+    case 11:
+        alert("Ваши числа - 11,12,13,14,15");
+        break;
+    case 12:
+        alert("Ваши числа - 12,13,14,15");
+        break;
+    case 13:
+        alert("Ваши числа - 13,14,15");
+        break;
+    case 14:
+        alert("Ваши числа - 14,15");
+        break;
+    case 15:
+        alert("Ваше число - 15");
+        break;    
+}
+
+№5
+
+var a = 3;
+var b = 7;
+
+Function plus(a,b){
+    return a + b;
+}
+
+Function minus(a,b){
+    return a - b;
+}
+
+Function Del(a,b){
+    return a / b;
+}
+
+Function umn(a,b){
+    return a * b;
+}
+
+№6
+function mathOperation(arg1, arg2, operation){
+  switch(operation){
+         case 'plus':
+         return arg1 + arg2;
+         break;
+       	 сase 'minus':
+         return arg1 - arg2;
+         break;
+         case 'Devid':
+         return arg1 / arg2;
+         break;
+       	 case 'multipl':
+         return arg1 * arg2;
+         break;
+   		}
+}
